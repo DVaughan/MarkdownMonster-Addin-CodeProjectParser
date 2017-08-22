@@ -1,0 +1,10 @@
+﻿{
+    "id": "CodeProjectMarkdownParserAddin",
+    "name": "CodeProject Markdown Parser Addin",
+    "summary": "Produces HTML compatible with CodeProject article submissions.",
+    "description": "Produces HTML compatible with CodeProject article submissions. In particular, it reformats &lt;pre&gt; tags so that CodeProject's code blocks render correctly.",    
+    "version": "1.0",
+    "minVersion": "1.0",
+    "author": "© Daniel Vaughan",
+    "updated": "2017-08-22T12:00:00Z"
+}

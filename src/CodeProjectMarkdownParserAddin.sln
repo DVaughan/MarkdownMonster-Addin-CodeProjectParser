@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeProjectMarkdownParserAddin", "CodeProjectMarkdownParserAddin\CodeProjectMarkdownParserAddin.csproj", "{A56D2CC9-E18C-4240-A385-00F6CE6A30C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56D2CC9-E18C-4240-A385-00F6CE6A30C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56D2CC9-E18C-4240-A385-00F6CE6A30C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56D2CC9-E18C-4240-A385-00F6CE6A30C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56D2CC9-E18C-4240-A385-00F6CE6A30C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C33BA688-D56F-4DBF-8B82-83C185AC605E}
+	EndGlobalSection
+EndGlobal
