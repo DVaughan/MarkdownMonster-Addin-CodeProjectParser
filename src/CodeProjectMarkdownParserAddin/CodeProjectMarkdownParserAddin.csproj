@@ -73,6 +73,7 @@
   <ItemGroup>
     <EmbeddedResource Include="PreviewTheme\CodeProject_Main.min.css" />
     <EmbeddedResource Include="PreviewTheme\Theme.html" />
+    <Content Include="screenshot.png" />
     <Content Include="version.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
