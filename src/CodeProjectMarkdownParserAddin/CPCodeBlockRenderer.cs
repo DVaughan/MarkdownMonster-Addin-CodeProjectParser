@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Markdig.Helpers;
 using Markdig.Renderers;
 using Markdig.Renderers.Html;
 using Markdig.Syntax;
@@ -17,12 +18,12 @@ namespace CodeProjectMarkdownParserAddin
 	/// </summary>
 	public class CPCodeBlockRenderer : CodeBlockRenderer
 	{
-		protected override void Write(HtmlRenderer renderer, CodeBlock obj)
+		protected override void Write(HtmlRenderer renderer, CodeBlock codeBlock)
 		{
 			renderer.EnsureLine();
 			renderer.Write("<pre");
 
-			var attributes = obj.TryGetAttributes();
+			var attributes = codeBlock.TryGetAttributes();
 			string cssClass = attributes?.Classes.FirstOrDefault();
 
 			if (cssClass != null)
@@ -39,7 +40,8 @@ namespace CodeProjectMarkdownParserAddin
 			}
 
 			renderer.Write(">");
-			renderer.WriteLeafRawLines(obj, true, true);
+
+			renderer.WriteLeafRawLines(codeBlock, true, true);
 			renderer.WriteLine("</pre>");
 		}
 

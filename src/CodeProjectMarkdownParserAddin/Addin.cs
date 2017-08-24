@@ -51,7 +51,7 @@ namespace CodeProjectMarkdownParserAddin
 
 			Clipboard.SetText(html);
 
-			ShowStatus("HTML copied to clipboard.");
+			ShowStatus("HTML copied to clipboard.", 3000);
 		}
 
 		void EnsureThemeExists()
@@ -83,10 +83,12 @@ namespace CodeProjectMarkdownParserAddin
 
 		static void CopyEmbeddedResources(string outputDir, string resourceLocation, List<string> files)
 		{
+			var assembly = Assembly.GetExecutingAssembly();
+
 			foreach (var file in files)
 			{
 				string embeddedResourcePath = resourceLocation + @"." + file;
-				using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(embeddedResourcePath))
+				using (Stream stream = assembly.GetManifestResourceStream(embeddedResourcePath))
 				{
 					if (stream == null)
 					{

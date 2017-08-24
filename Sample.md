@@ -3,15 +3,14 @@
 This file demonstrates the CodeProject markdown parser for Markdown Monster.
 
 ```csharp
-public override void OnApplicationStart()
+void CopyHtmlToClipboard()
 {
-    base.OnApplicationStart();
-    
-    // Id - should match output folder name
-    Id = "CodeProjectMarkdownParserAddin";
-    
-    // a descriptive name - shows up on labels and tooltips for components
-    Name = "CodeProject Markdown Parser";
+	MarkdownDocument document = ActiveDocument;
+	string html = document.RenderHtml();
+
+	Clipboard.SetText(html);
+
+	ShowStatus("HTML copied to clipboard.");
 }
 ```
 
