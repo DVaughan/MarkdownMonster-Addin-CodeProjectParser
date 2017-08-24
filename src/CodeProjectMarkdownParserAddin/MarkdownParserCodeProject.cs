@@ -24,12 +24,12 @@ namespace CodeProjectMarkdownParserAddin
 		{
 			var renderer = new HtmlRenderer(writer);
 
-			CodeBlockRenderer codeBlockRender = null;
+			CodeBlockRenderer codeBlockRenderer = null;
 
 			foreach (var objectRenderer in renderer.ObjectRenderers)
 			{
-				codeBlockRender = objectRenderer as CodeBlockRenderer;
-				if (codeBlockRender != null)
+				codeBlockRenderer = objectRenderer as CodeBlockRenderer;
+				if (codeBlockRenderer != null)
 				{
 					break;
 				}
@@ -37,7 +37,7 @@ namespace CodeProjectMarkdownParserAddin
 
 			var cpCodeBlockRenderer = new CPCodeBlockRenderer();
 
-			if (codeBlockRender != null)
+			if (codeBlockRenderer != null)
 			{
 				renderer.ObjectRenderers.Replace<CodeBlockRenderer>(cpCodeBlockRenderer);
 			}

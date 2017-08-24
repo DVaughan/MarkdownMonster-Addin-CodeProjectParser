@@ -47,7 +47,7 @@ namespace CodeProjectMarkdownParserAddin
 		void CopyHtmlToClipboard()
 		{
 			MarkdownDocument document = ActiveDocument;
-			var html = document.RenderHtml();
+			string html = document.RenderHtml();
 
 			Clipboard.SetText(html);
 
