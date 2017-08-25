@@ -7,8 +7,8 @@ $src = "."
 
 # you may have to fix this target path if you rename the addin
 $dlls = "$env:appdata\Markdown Monster\Addins\CodeProjectMarkdownParserAddin"
-$tgt = "..\Build"
-$dist = "..\Build\Distribution"
+$tgt = "..\..\Build"
+$dist = "..\..\Build\Distribution"
 
 "Copying from: $dlls"
 
