@@ -10,14 +10,6 @@ namespace CodeProjectMarkdownParserAddin
 		public MarkdownParserCodeProject(bool pragmaLines = false, bool forceLoad = false)
 			: base(pragmaLines, forceLoad)
 		{
-
-		}
-
-		public override string Parse(string markdown)
-		{
-			var parsed = base.Parse(markdown);
-
-			return parsed;
 		}
 
 		protected override IMarkdownRenderer CreateRenderer(TextWriter writer)
